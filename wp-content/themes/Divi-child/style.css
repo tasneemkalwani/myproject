@@ -11,10 +11,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Template: Divi
 */
 
-/* body h2{
-	font-size: 46px;
-
+body .et_overlay:before {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    margin: -16px 0 0 -16px;
+    font-size: 32px;
+    content: "\e07a";
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
 }
-body p{
-	font-size: 20px;
-} */
+
