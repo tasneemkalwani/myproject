@@ -1,0 +1,6 @@
+2020-02-26T07:29:16+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\myproject\wp-includes\wp-db.php on line 2030
+
+2020-02-26T07:34:23+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\myproject\wp-admin\includes\class-wp-filesystem-direct.php on line 66
+
+2020-02-26T07:35:06+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\myproject\wp-includes\Requests\Transport\cURL.php on line 463
+
