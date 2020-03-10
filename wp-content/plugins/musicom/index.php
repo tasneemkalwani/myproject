@@ -62,5 +62,45 @@ function musicom_post_type() {
 
 }
 add_action( 'init', 'musicom_post_type');
+
+
+
+//hook into the init action and call create_book_taxonomies when it fires
+add_action( 'init', 'create_singers_taxonomy');
+ 
+function create_singers_taxonomy() {
+ 
+// Add new taxonomy, make it hierarchical like categories
+//first do the translations part for GUI
+ 
+  $labels = array(
+    'name' => _x( 'Singers', 'taxonomy general name' ),
+    'singular_name' => _x( 'Singer', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Search Singers' ),
+    'all_items' => __( 'All Singers' ),
+    'parent_item' => __( 'Parent Singer' ),
+    'parent_item_colon' => __( 'Parent Singer:' ),
+    'edit_item' => __( 'Edit Singer' ), 
+    'update_item' => __( 'Update Singer' ),
+    'add_new_item' => __( 'Add New Singer' ),
+    'new_item_name' => __( 'New Singer Name' ),
+    'menu_name' => __( 'Singers' ),
+  );    
+ 
+// Now register the taxonomy
+ 
+  register_taxonomy('singers',array('musicom'), array(
+    'hierarchical' => true,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'singers	' ),
+  ));
+ 
+}
+   
+
+
    
 

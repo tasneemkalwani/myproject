@@ -1,0 +1,4 @@
+2020-03-10T19:34:00+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\myproject\wp-includes\wp-db.php on line 2030
+
+2020-03-10T20:43:49+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\myproject\wp-admin\includes\template.php on line 12
+

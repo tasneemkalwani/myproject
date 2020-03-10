@@ -11,15 +11,42 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Template: Divi
 */
 
-body .et_overlay:before {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    margin: -16px 0 0 -16px;
-    font-size: 32px;
-    content: "\e07a";
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    transition: all .4s;
+.section-musicom-list .container{
+    padding: 5% 0;
 }
+body #main-content .container:before{
+    content:none;
+}
+.section-musicom-list .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-musicom-list .row .two-col {
+    width: 46%;
+    padding: 5%;
+    margin: 0 2%;
+    box-sizing: border-box;
+    border: 1px solid #dfdfdf;
+    box-shadow: 0 10px 35px -15px rgba(0,0,0,0.3);
+}
+.section-musicom-list .row .two-col .title {
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.section-musicom-list .row .two-col .content{
+    font-size: 14px;
+    line-height: 1.8;
+}
+.section-musicom-list .row .two-col .read-more{
+    background: #c82226;
+    color: #fff;
+    padding: 3px 30px;
+    margin-top: 20px;
+    float: left;
+    font-size: 16px;
+    border-radius: 42px;
+}
+
+
 
